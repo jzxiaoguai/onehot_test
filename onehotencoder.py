@@ -10,7 +10,7 @@ sc = SparkContext(appName="IndexerStep")
 sqlContext = SQLContext(sc)
 #0.Read data
 data = sqlContext.read.load("hdfs://")       #your file path,pay attention to the format you saved,you can add ".format()" to set
-print data.select("label","tag").first()     #read data in a DataFrame
+print data.select("label","v1").first()     #read data in a DataFrame
 
 #1.oneHotEncoder
 from pyspark.ml.feature import OneHotEncoder, StringIndexer
