@@ -1,6 +1,8 @@
 # onehot_test
 onehotencoder in python
+
 based on spark1.6.0
+
 some problem i met and already solved:
 
 1)read file from hdfs
